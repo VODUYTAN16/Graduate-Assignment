@@ -7,13 +7,25 @@
     <!-- link word font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Afacad:wght@400;600&family=Arimo:ital,wght@0,400;0,500;1,500;1,600&family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&family=Merriweather:wght@400;700&family=Playfair+Display:ital,wght@0,700;1,400&family=Poppins:ital,wght@0,300;1,600&family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Barlow+Condensed:wght@500;600&display=swap" rel="stylesheet">
     <!-- link icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <!-- link css -->
     <link rel="stylesheet" href="index.css">
+    <!-- link js -->
+   
+    <script src="index.js"></script>    
+<!-- link owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css" integrity="sha512-C8Movfk6DU/H5PzarG0+Dv9MA9IZzvmQpO/3cIlGIflmtY3vIud07myMu4M/NTPJl8jmZtt/4mC9bAioMZBBdA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
     <header>
        <div class="header">
         <div class="small-header">
@@ -27,7 +39,7 @@
                             <li class="menu-item" ><a style="color: red" class="link-head" href="#">Home</a></li>
                             <li class="menu-item"><a class="link-head" href="#">Private coaching</a></li>
                             <li class="menu-item menu-item-other">
-                                <a class="link-head " href="#">Other services</a> 
+                                <a class="link-head " href="#">Other services<span><i class="fa-solid fa-angle-down"></i></span></a> 
                                 <ul class="sub-menu">
                                     <li class="menu-item-item sub-m"><a class="link-head-sm " href="#">DIGITAL MARKETING</a></li>
                                     <li class="menu-item-item sub-m"><a class="link-head-sm " href="#">VIDEO EDITOR</a></li>
@@ -37,13 +49,12 @@
                                     <li class="menu-item-item sub-m"><a class="link-head-sm" href="#">PERSONAL BRANDING DEVELOPMENT</a></li>
                                     <li class="menu-item-item sub-m"><a class="link-head-sm" href="#">INTERIOR DESIGN</a></li>
                                 </ul>
-                                <span>  <i class="fa-solid fa-angle-down"></i></span>
+                                
                             </li>
                             <li class="menu-item menu-item-project">
-                                <a class="link-head" href="#">Projects</a> 
-                                <span>  
-                                    <i class="fa-solid fa-angle-down"></i>
-                                </span>
+                                <a class="link-head" href="#">Projects<span><i class="fa-solid fa-angle-down"></i>
+                                </span></a> 
+                               
                                 <ul class="sub-menu">
                                     <li class="menu-item-item sub-m"><a class="link-head-sm " href="#">NHILE OFFICIAL</a></li>
                                     <li class="menu-item-item sub-m"><a class="link-head-sm " href="#">NHILE FOUNDATION</a></li>
@@ -53,7 +64,7 @@
                                     <li class="menu-item-item sub-m"><a class="link-head-sm" href="#">IKIGAI ZONE</a></li>
                                 </ul>
                             </li>
-                            <li class="menu-item menu-item-about"><a class="link-head" href="#">About US</a> <span>   <i class="fa-solid fa-angle-down"></i></span>
+                            <li class="menu-item menu-item-about"><a class="link-head" href="#">About US<span><i class="fa-solid fa-angle-down"></i></span></a> 
                                 <ul class="sub-menu">
                                     <li class="menu-item-item sub-m"><a class="link-head-sm " href="#">REVIEWS</a></li>
                                 </ul>
@@ -69,7 +80,226 @@
        </div>
     </header>
     <main>
+        <div class="pic-header">
+            <div class="box-header-social-link">
+                <div class="social-links header-social-link">
+                    <a href="#" class="social-link social-link-yt">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="#" class="social-link social-link-fb">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link social-link-tt"> 
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="#" class="social-link social-link-ins">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link social-link-li">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="owl-carousel owl-theme owl1">
+                <div class="item"><img src="https://nhi.sg/_next/static/media/home-banner-3.0c9620e9.webp" alt=""></div>
+                <div class="item"><img src="https://nhi.sg/_next/static/media/home-banner-4.b0f61a00.webp" alt=""></div>
+                <div class="item"><img src="https://nhi.sg/_next/static/media/home-banner-1.a7a93ee0.webp" alt=""></div>
+                <div class="item"><img src="https://nhi.sg/_next/static/media/home-banner-2.d76d091f.webp" alt=""></div>
+            </div>
+        </div>
+        <div class="box-about-me">
+            <div class="container-about-me">
+                    <div class="my-pic">
+                        <img class="pic" src="https://nhi.sg/_next/static/media/about-me.4cbbb458.webp" alt="">
+                    </div>
+                    <div class="content-about-me">
+                        <div class="head-content">
+                            <div class="red-content">ABOUT ME</div>
+                            <div class="name">NHILE LIFE COACH</div>
+                        </div>
+                        <div class="paragraph">Welcome to the FREE and VALUABLE knowledge treasure trove of Nhi Le - the first Life Coach in Vietnam. She has Diploma in Psychology from Singapore. Nhi Le helps people become happy, develop themselves, and find the answer to the question "Who am I?" via the lessons and experiences she has accumulated.</div>
+                        <div class="paragraph">Despite growing up in an imperfect environment in Quang Nam province and becoming a single mother in a foreign land, Nhi Le never gave up. She tirelessly learns and develops herself, standing up against obstacles. With effort and perseverance, Nhi Le has achieved success in her many roles, from investor, entrepreneur, advisor, leader to renowned healing speaker, not only in Singapore but also in many other parts of the world.</div>
+                        <div class="paragraph">To assist the people of Vietnam in transforming their lives and uncovering their inner potential, Nhi Le, along with the Strengths Quotient Institute (SQI) and the NhiLe Team, is bringing the copyright of many quality courses to her homeland. The positive environment and valuable knowledge of the Ikigai Zone and SQI have also helped Nhi Le continuously "rebirth" herself into a more perfect version.</div>
+                        <div class="link-main">
+                            <a class="link" href="#">
+                                VIEW MORE <span>  <i class="fa-solid fa-arrow-right"></i></span>
+                                </a>
+                        </div>
+                       
+                    </div>
+            </div>
+        </div>
+        <div class="follower">
+            <div class="container-follower">
+                <div class="container-number">
+                    <div class="number-yt">
+                        <div class="num">
+                            <div class="number" id="countYT">10000</div>
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="text">YOUTUBE SUBSCRIBERS</div>
+                    </div>
+                    <div class="number-tt">
+                        <div class="num">
+                            <div class="number" id="countTT">10000</div>
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="text">YOUTUBE SUBSCRIBERS</div>
+                    </div>
+                    <div class="number-fb">
+                        <div class="num">
+                            <div class="number" id="countFB">10000</div>
+                        <span class="plus">+</span>
+                        </div>
+                        <div class="text">YOUTUBE SUBSCRIBERS</div>
+                    </div>
+                </div>
+                <div class="role">
+                    <div class="privacy member">
+                        <div class="icon"> <img src="https://nhi.sg/_next/static/media/privacy-life-coach.d83a0e26.png" alt=""></div>
+                        <h3>PRIVACY LIFE COACH</h3>
+                    </div>
+                    <div class="mentor member">
+                        <div class="icon"> <img src="https://nhi.sg/_next/static/media/mentor.25606f77.png" alt=""></div>
+                        <h3>MENTOR</h3>
+                    </div>
+                    <div class="team member">
+                        <div class="icon"> <img src="https://nhi.sg/_next/static/media/team-building.9c03e8e0.png" alt=""></div>
+                        <h3>TEAM BUILDING</h3>
+                    </div>
+                    <div class="speaker member">
+                        <div class="icon"> <img src="https://nhi.sg/_next/static/media/speaker.010c853e.png" alt=""></div>
+                        <h3>SPEAKER</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="other-services">
+            <div class="box-other-services">
+                <div class="other-sv">
+                    <div class="head-other-sv">
+                        <div class="title-other-sv">
+                            <h2>OTHER SERVICES</h2>
+                        </div>
+                        <ul class="selection-other-sv">
+                            <li class="select-1 sl"><h3>MARKETING</h3></li>
+                            <li class="select sl"><span><i class="fa-solid fa-minus"></i></span><h3>EDITOR</h3></li>
+                            <li class="select sl"><span><i class="fa-solid fa-minus"></i></span><h3>DESIGN</h3></li>
+                            <li class="select sl"><span><i class="fa-solid fa-minus"></i></span><h3>WEB/APP</h3></li>
+                            <li class="select sl"><span><i class="fa-solid fa-minus"></i></span><h3>SOCIAL</h3></li>
+                            <li class="select sl"><span><i class="fa-solid fa-minus"></i></span><h3>BRANDING</h3></li>
+                            <li class="select sl"><span><i class="fa-solid fa-minus"></i></span><h3>INTERIOR DESIGN</h3></li>
+                        </ul> 
+                    </div>
+                    <div class="middle-other-sv">
+                        <div class="a a1">
+                            <a href="#"><img src="https://nhi.sg/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fnhi-le.3a66e0cf.jpg&w=384&q=75" alt="picture"></a>
+                        </div>
+                        <div class="a a2">
+                            <a href="#"><img src="https://nhi.sg/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fms-nhi.e08f7339.jpg&w=384&q=75" alt="picture"></a>
+                        </div>
+                        <div class="a a3">
+                            <a href="#"><img src="https://nhi.sg/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fspice-nice.26b900c8.jpg&w=384&q=75" alt="picture"></a>
+                        </div>
+                        <div class="a a4">
+                            <a href="#"><img src="https://nhi.sg/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fkid-k.ceeb2b44.jpg&w=384&q=75" alt="picture"></a>
+                        </div>
+                        <div class="a a5">
+                            <a href="#"><img src="https://nhi.sg/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fjovan-medrano.da47350d.jpeg&w=384&q=75" alt="picture"></a>                     
+                        </div>
+                        <div class="a a6">
+                            <a href="#"><img src="https://nhi.sg/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fg9.c038200f.jpeg&w=384&q=75" alt="picture"></a>                     
+                        </div>
+                        <div class="a a7">
+                           <a href="#"><img src="https://nhi.sg/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fshare-%26-work.e81fe478.jpeg&w=384&q=75" alt="picture"></a>
+                        </div>
+                        <div class="a a8">
+                             <a href="#"><img src="https://nhi.sg/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fikigai.5264e858.jpeg&w=384&q=75" alt="picture"></a>                         
+                        </div>
+                        <div class="a a9">
+                            <a href="#"><img src="https://nhi.sg/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fava-studio.0fcbf3a8.jpeg&w=384&q=75" alt="picture"></a>                          
+                        </div>
+                        <div class="a a10">
+                            <a href="#"><img src="https://nhi.sg/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fnhi-house.6bcdc19b.jpeg&w=384&q=75" alt="picture"></a>
+                        </div>
 
+                     </div>
+                    <div class="link-main vm-other-service">
+                        <a class="link" href="#">
+                            VIEW MORE <span>  <i class="fa-solid fa-arrow-right"></i></span>
+                            </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <div class="customer">
+            <div class="title-customer"><h2>CUSTOMER TALK ABOUT US</h2></div>
+            <div class="owl-carousel owl-theme owl2">
+                <div class="item">
+                    <div class="container-customer-feedback">
+                        <div class="feedback">
+                            <div class="customer-name"> <h3>DOUGLAS STEVENSON</h3></div>
+                            <div class="div-cus read-more-content">
+                                I've been working with Team Nhile for the past 12 weeks, and they have demonstrated an extremely high level of professionalism and mastery in how they have executed the media strategy to help me build my subscriber base. They are extremely meticulous and detailed, and very proactive in their approach. <br>
+                                There are not many teams that I have worked with that operate so systematically and produce impeccable quality in a consistent and predictable manner. They find gems even with my current content and repurpose them in ways that are creative and innovative. <br>
+                                They have been amazing to work with, and have constantly exceeded my expectations. They play at a gradient that has become a tough act for others to follow. <br>
+                                10 stars out of 5!
+                            </div>
+                            <span class="read-more-btn">Read More</span>
+                        </div>
+                        <div class="container-customer-pic">
+                            <div class="customer-pic-1 customer-pic">
+                                <img style="height: 460px; width: 280px;"src="https://nhi.sg/_next/static/media/douglas-large.f625abd7.webp" alt="">
+                            </div>
+                            <div class="customer-pic-2 customer-pic">
+                                <img style="width: 290px; height: 329px;"src="https://nhi.sg/_next/static/media/douglas-small.d35c3475.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="container-customer-feedback">
+                        <div class="feedback">
+                            <div class="customer-name"> <h3>JOVAN MEDRANO</h3></div>
+                            <div class="div-cus read-more-content">
+                                I have been working with the NhiLe team now for several months and all I can say is that it has been a great working experience. They are very polite and responsive in their communications. There’s a lot going on behind the scenes that they are taking care of - like editing, design, posting, and more - and everything just works in clockwork so I don’t need to worry about anything. Which helps me do what I do best, which is sharing the knowledge that will help my audience. I definitely highly recommend working with them!
+            
+                            </div>
+                            <span class="read-more-btn">Read More</span>
+                        </div>
+                        <div class="container-customer-pic">
+                            <div class="customer-pic-1 customer-pic">
+                                <img style="height: 460px; width: 280px;"src="https://nhi.sg/_next/static/media/jovan-medrano-large.e6c1d1f3.webp" alt="">
+                            </div>
+                            <div class="customer-pic-2 customer-pic">
+                                <img style="width: 290px; height: 329px;"src="https://nhi.sg/_next/static/media/jovan-medrano-small.dc3df4ed.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <div class="item">
+                    <div class="container-customer-feedback">
+                        <div class="feedback">
+                            <div class="customer-name"> <h3>MICHAEL LE</h3></div>
+                            <div class="div-cus read-more-content">
+                                After partnering up with NhiLe team my business has taken a quick positive turn. With a team full of talented individuals that are all, even though already on top of their profession, eager to learn and improve themselves every day. All with their own unique skill set they will, when combined, inevitably create greatness for you. <br>
+                                NhiLe team has helped my business to accelerate and grow really fast on social media platforms by offering and delivering professional management and modern techniques to create content and make sure my business will keep up with this fast growing online marketing industry. <br>
+                                My business and life has changed a lot after teaming up and I feel so grateful that our path has crossed. Outstanding methods on top of excellent teamwork equals extraordinary results.
+                            </div>
+                            <span class="read-more-btn">Read More</span>
+                        </div>
+                        <div class="container-customer-pic">
+                            <div class="customer-pic-1 customer-pic">
+                                <img style="height: 460px; width: 280px;" src="https://nhi.sg/_next/static/media/michael-le-large.42f6ab75.webp" alt="">
+                            </div>
+                            <div class="customer-pic-2 customer-pic">
+                                <img style="width: 290px; height: 329px;" src="https://nhi.sg/_next/static/media/michael-le-small.f4bc3c1f.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="footer">
@@ -156,11 +386,10 @@
             <div class="bottom">
                 <div class="container-bottom">
                     <div class="container-banner col-lg-6">
-                        <div class="logo">
-                            <img src="https://nhi.sg/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.d8a9243a.png&w=128&q=75" alt="">
+                        <div class="logo logo-footer">
+                            <img  src="https://nhi.sg/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.d8a9243a.png&w=128&q=75" alt="">
                         </div>
-                        <p style="margin-left: 10px;">
-                             ©2023. All rights reserved
+                        <p>©2023. All rights reserved
                         </p>
                     </div>
                     <div class="container-social col-lg-6"> 
@@ -197,5 +426,114 @@
             </div>
         </div>
     </footer>
+    <script>
+        
+$('.owl2').owlCarousel({
+    loop:true,
+    margin:30,
+    nav:false,
+    dots:true,
+    center:true,
+    autoplay: true,
+    autoplayTimeout:5000,
+    mouseDrag: true,
+    dotsSpeed:300,
+    autoplaySpeed: 300,
+    // autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+$('.owl1').owlCarousel({
+    loop:true,
+    margin:30,
+    nav:false,
+    dots:false,
+    center:true,
+    autoplay: true,
+    autoplayTimeout:5000,
+    mouseDrag: true,
+    dotsSpeed:300,
+    autoplaySpeed: 300,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+// readmore readless
+$(document).ready(function () {
+    $(".read-more-btn").click(function () {
+        $(this).prev(".read-more-content").toggleClass("expanded");
+        $(this).text($(this).text() === "Read More" ? "Read Less" : "Read More");
+    });
+});
+//cout number
+document.addEventListener('DOMContentLoaded', function() {
+    runNumberCounter('countYT', 218000, '#D40000');
+    runNumberCounter('countTT', 423500, '#1D2122');
+    runNumberCounter('countFB', 224000, '#183186');
+});
+
+function runNumberCounter(elementId, targetNumber, color) {
+    var element = document.getElementById(elementId);
+    var currentNumber = 0;
+    var increment = Math.ceil(targetNumber / 150); 
+
+    function updateNumber() {
+        currentNumber += increment;
+        if (currentNumber > targetNumber) {
+            currentNumber = targetNumber;
+        }
+        element.innerText = currentNumber.toLocaleString();
+        element.style.color = color; 
+    }
+
+    function startCounter() {
+        var counterInterval = setInterval(function() {
+            updateNumber();
+            if (currentNumber === targetNumber) {
+                clearInterval(counterInterval);
+            }
+        }, 10);
+    }
+
+    var isInViewport = function(element) {
+        var rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    };
+
+    function handleVisibility() {
+        if (isInViewport(element)) {
+            startCounter();
+            window.removeEventListener('scroll', handleVisibility);
+        }
+    }
+
+    window.addEventListener('scroll', handleVisibility);
+    handleVisibility();
+}
+// other-services
+
+    </script>
 </body>
 </html>
